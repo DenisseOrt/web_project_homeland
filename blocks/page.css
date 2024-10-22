@@ -1,14 +1,14 @@
 .page {
-  position: relative;
-  width: 1280px;
   height: 2008px;
+  width: 100%;
   background-color: #2a2c2f;
   font-family: "Inter";
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
   .page {
-    position: relative;
     width: 768px;
     height: 1742px;
     background-color: #2a2c2f;
@@ -17,7 +17,6 @@
 
 @media screen and (max-width: 320px) {
   .page {
-    position: relative;
     width: 320px;
     height: 1705px;
     background-color: #2a2c2f;
