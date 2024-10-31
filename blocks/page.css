@@ -1,24 +1,20 @@
 .page {
-  height: 2008px;
+  height: 100%;
   width: 100%;
   background-color: #2a2c2f;
   font-family: "Inter";
-  display: flex;
-  justify-content: center;
+  margin: auto;
+  padding-top: 34px;
 }
 
 @media screen and (max-width: 768px) {
   .page {
-    width: 768px;
-    height: 1742px;
-    background-color: #2a2c2f;
+    padding-top: 30px;
   }
 }
 
 @media screen and (max-width: 320px) {
   .page {
-    width: 320px;
-    height: 1705px;
-    background-color: #2a2c2f;
+    padding-top: 20px;
   }
 }
