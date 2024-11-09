@@ -5,6 +5,8 @@
 }
 
 .place {
+  width: 100%;
+  max-width: 987px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
@@ -13,8 +15,8 @@
 }
 
 .place__title {
-  width: 460px;
-  height: 152px;
+  width: 100%;
+  min-width: 150px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
@@ -32,7 +34,6 @@
 
 .place__website-heading {
   width: 85.17px;
-  height: 15px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -44,7 +45,6 @@
 
 .place__website-artist {
   width: 455.53px;
-  height: 22px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -55,7 +55,9 @@
 }
 
 .place__image {
-  width: 460px;
+  width: 100%;
+  max-width: 460px;
+  height: auto;
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
 }
 
@@ -64,11 +66,13 @@
 }
 
 .place__text {
-  width: 484px;
+  width: 100%;
+  max-width: 484px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
+  line-height: 29px;
   line-height: 163%;
   color: #ffffff;
 }
@@ -92,33 +96,39 @@
   background: linear-gradient(90deg, #0278fe40 0%, #003a7b40 99.98%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .place {
-    width: 720px;
+    width: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(2, 1fr);
   }
 
   .place__title {
-    width: 340px;
+    width: 100%;
+    max-width: 340px;
     font-size: 42px;
     line-height: 46px;
   }
 
   .place__website-heading {
-    width: 67px;
+    width: 100%;
+    max-width: 67px;
     line-height: 15px;
   }
 
   .place__website-artist {
-    width: 352px;
+    width: 100%;
+    max-width: 352px;
   }
 
   .place__image {
-    width: 340px;
+    width: 100%;
+    max-width: 340px;
   }
 
   .place__text {
-    width: 352px;
+    width: 100%;
+    max-width: 352px;
     font-size: 16px;
   }
   .place__button {
@@ -126,33 +136,37 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 472px) {
   .place {
     grid-template-columns: 1fr;
     margin: auto;
+    width: 100%;
+    max-width: 320px;
   }
 
   .place__title {
-    width: 288px;
+    width: 100%;
     font-size: 32px;
     line-height: 35px;
   }
 
   .place__website-heading {
-    width: 288px;
+    width: 100%;
   }
 
   .place__website-artist {
-    width: 288px;
+    width: 100%;
   }
 
   .place__image {
-    width: 320px;
+    width: 100%;
+    height: auto;
   }
 
   .place__text {
-    width: 288px;
+    width: 100%;
     font-size: 16px;
+    line-height: 26.08px;
   }
 
   .place__button {
